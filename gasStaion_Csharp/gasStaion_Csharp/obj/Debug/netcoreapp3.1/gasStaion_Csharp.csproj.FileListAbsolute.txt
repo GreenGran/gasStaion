@@ -1,0 +1,13 @@
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.exe
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.deps.json
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.runtimeconfig.json
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.runtimeconfig.dev.json
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.dll
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\bin\Debug\netcoreapp3.1\gasStaion_Csharp.pdb
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.csprojAssemblyReference.cache
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.AssemblyInfoInputs.cache
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.AssemblyInfo.cs
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.dll
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.pdb
+C:\Users\john\Desktop\GitHub\repo\gasStation\gasStaion_Csharp\gasStaion_Csharp\obj\Debug\netcoreapp3.1\gasStaion_Csharp.genruntimeconfig.cache
