@@ -7,14 +7,13 @@ namespace gasStaion_Csharp
     {
         static void Main(string[] args)
         {   
-            List<int> A = new List<int>() { 7, 1, 0, 11,4 };
+            List<int> A = new List<int>() { 7, 1, 0, 11, 4};
 
-            List<int> B = new List<int>() { 5, 9, 1, 2, 5 };
-            int currentGas = 0;
-
-            int result = GasStationCalcFunc(A, B);
+            List<int> B = new List<int>() { 5, 9, 1, 2, 5};
+            int result;
+            result = GasStationCalcFunc(A, B);
             Console.WriteLine("result:"+ result);
-            result = GasStationCalcFunc2(A, B);
+            result = improvedSimulatio(A, B);
             Console.WriteLine("result:" + result);
 
 
@@ -22,6 +21,7 @@ namespace gasStaion_Csharp
 
         private static int GasStationCalcFunc(List<int> A, List<int> B)
         {
+            // brute force time complacity of n^n
             for (int T = 0; T < A.Count; T++)
             {
                int startingIndex = T;
@@ -29,20 +29,19 @@ namespace gasStaion_Csharp
                 int currentGas = 0;
                 for (int i = T; ; i++)
                 {
-                    Console.WriteLine("T:" + T);
-                    Console.WriteLine("i:"+i);
+                    
                     currentGas += A[i];
                     currentGas -= B[i];
-                    Console.WriteLine("currentGas:" + currentGas);
+                    
                     if (currentGas < 0)
                     {
-                        Console.WriteLine("breaking out");
+                       
                         break;
                     }
 
                     if(i == startingIndex && flag)
                     {
-                        Console.WriteLine("circal complet");
+                        
                         return T;
                     }
                     flag = true;
@@ -54,40 +53,32 @@ namespace gasStaion_Csharp
             }
             return -1;
         }
-        private static int GasStationCalcFunc2(List<int> A, List<int> B)
+        private static int improvedSimulatio(List<int> A, List<int> B)
         {
-            for (int T = 0; T < A.Count; T++)
+            // improved version runs much faster at time O(n+n+n)=O(3n) = O(n)
+            int diff = 0;
+            for (int j = 0; j < A.Count; j++)
             {
-                int startingIndex = T;
-                bool flag = false;
-                int currentGas = 0;
-                for (int i = T; ; )
+                diff += (A[j] - B[j]);
+            }
+            
+            if (diff < 0)// chacks if there is even one possible starting point
+            {
+                return -1;
+            }
+            else {
+                int starting = 0, currentGas = 0;
+                for (int i = 0; i < A.Count; i++)
                 {
-                    Console.WriteLine("T:" + T);
-                    Console.WriteLine("i:" + i);
-                    currentGas += A[i];
-                    currentGas -= B[i];
-                    Console.WriteLine("currentGas:" + currentGas);
+                    currentGas += A[i] - B[i];
                     if (currentGas < 0)
                     {
-                        Console.WriteLine("breaking out");
-                        break;
-                    }
-                    i++;
-                    if (i == startingIndex)
-                    {
-                        Console.WriteLine("circal complet");
-                        return T;
-                    }
-                   
-                    
-                    if (i == A.Count - 1)
-                    {
-                        i = 0;
+                        starting = i + 1;
+                        currentGas = 0;
                     }
                 }
-            }
-            return -1;
+                return starting;
+                }
         }
     }   
     
